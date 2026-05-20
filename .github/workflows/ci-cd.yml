@@ -37,7 +37,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
     - name: Tag Docker Image
-      run: docker tag myapp yourdockerusername/myapp:latest
+      run: docker tag myapp dockermaster1008/myapp:latest
 
     - name: Push Docker Image
-      run: docker push yourdockerusername/myapp:latest
+      run: docker push dockermaster1008/myapp:latest
