@@ -30,14 +30,4 @@ jobs:
     - name: Build Docker image
       run: docker build -t myapp .
 
-    - name: Login DockerHub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.dockermaster1008 }}
-        password: ${{ secrets.Tejal@020301 }}
-
-    - name: Tag image
-      run: docker tag myapp dockermaster1008/myapp:latest
-
-    - name: Push image
-      run: docker push dockermaster1008/myapp:latest
+    
